@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Reviews</title>
+    <link rel="stylesheet" href="{% static 'movie_review/css/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Movie Reviews</h1>
+        <a class="btn" href="{% url 'review_create' %}">Add New Review</a>
+        <ul class="movie-list">
+            <li><a href="{% url 'review_detail' 1 %}">Review 1: Inception</a></li>
+            <li><a href="{% url 'review_detail' 2 %}">Review 2: The Matrix</a></li>
+            <li><a href="{% url 'review_detail' 3 %}">Review 3: Interstellar</a></li>
+        </ul>
+    </div>
+</body>
+</html>

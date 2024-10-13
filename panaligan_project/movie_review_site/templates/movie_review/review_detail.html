@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Review Details</title>
+    <link rel="stylesheet" href="{% static 'movie_review/css/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Review {{ review_id }}</h1>
+        <p>Details about the movie review go here.</p>
+        <p>Content: This is a sample content for review {{ review_id }}.</p>
+        <a class="btn" href="{% url 'movie_list' %}">Back to Reviews</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Reviews</title>
+    <link rel="stylesheet" href="{% static 'game_review/css/styles.css' %}">
+</head>
+<body>
+    <nav>
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'reviews' %}">Reviews</a>
+        <a href="{% url 'about' %}">About</a>
+    </nav>
+    
+    <h1>Game Reviews</h1>
+
+    <div class="game-review">
+        <h2>Elden Ring</h2>
+        <img src="{% static 'images/elden_ring.jpg' %}" alt="Elden Ring">
+        <p>An action RPG set in a vast open world, featuring challenging combat...</p>
+        <p>Rating: ★★★★★</p>
+    </div>
+
+    <div class="game-review">
+        <h2>The Last of Us Part II</h2>
+        <img src="{% static 'images/last_of_us.jpeg' %}" alt="The Last of Us Part II">
+        <p>Experience the emotional story of Ellie in a post-apocalyptic world...</p>
+        <p>Rating: ★★★★☆</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Game Review Site</p>
+    </footer>
+</body>
+</html>

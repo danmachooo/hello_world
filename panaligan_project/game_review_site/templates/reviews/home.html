@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Reviews</title>
+    <link rel="stylesheet" href="{% static 'game_review/css/styles.css' %}">
+</head>
+<body>
+    <nav>
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'reviews' %}">Reviews</a>
+        <a href="{% url 'about' %}">About</a>
+    </nav>
+    
+    <h1>Welcome to Game Reviews!</h1>
+    <p>Your trusted source for gaming insights and reviews.</p>
+
+    <h2>Featured Game: Cyberpunk 2077</h2>
+    <img src="{% static 'images/cyber_punk.jpg' %}" alt="Cyberpunk 2077">
+    <p>Cyberpunk 2077 is an open-world, action-adventure story set in Night City...</p>
+    <p>Rating: ★★★★☆</p>
+
+    <h3>Recent Reviews</h3>
+    <ul>
+        <li><a href="{% url 'reviews' %}">Elden Ring - ★★★★★</a></li>
+        <li><a href="{% url 'reviews' %}">The Last of Us Part II - ★★★★☆</a></li>
+    </ul>
+
+    <footer>
+        <p>&copy; 2024 Game Review Site</p>
+    </footer>
+</body>
+</html>

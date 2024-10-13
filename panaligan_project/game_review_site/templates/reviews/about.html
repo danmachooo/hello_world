@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="{% static 'game_review/css/styles.css' %}">
+</head>
+<body>
+    <nav>
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'reviews' %}">Reviews</a>
+        <a href="{% url 'about' %}">About</a>
+    </nav>
+    
+    <h1>About Us</h1>
+    <div class="about-section">
+        <p>Hello! I’m Angelica, a passionate gamer and reviewer. I’ve been playing games since I was 10...</p>
+        <p>I started this site to share honest and in-depth reviews of the latest games, covering a wide range of genres...</p>
+        <p>If you love gaming, you’re in the right place!</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Game Review Site</p>
+    </footer>
+</body>
+</html>
